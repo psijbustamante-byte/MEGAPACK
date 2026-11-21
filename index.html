@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mega Pack Recursos Psicológicos</title>
+<meta name="description" content="46 herramientas para sesión, 4 carpetas de psicoeducación, 120 preguntas terapéuticas, guía de instrumentos de tamizaje y cuadernillo para el paciente. Material descargable para psicólogos y psicólogas.">
+<meta property="og:title" content="Mega Pack Recursos Psicológicos">
+<meta property="og:description" content="Material clínico descargable para psicólogos y psicólogas: herramientas de sesión, psicoeducación, preguntas, instrumentos y ejercicios para el paciente.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --ink: #1d1d1f;
+    --mute: #6e6e73;
+    --line: #d2d2d7;
+    --mist: #f5f5f7;
+    --paper: #ffffff;
+    --blue: #0066cc;
+    --blue-press: #0055aa;
+    --wa: #1d1d1f;
+    --radius: 14px;
+    --wrap: 1080px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  :focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 6px; }
+  .wrap { width: min(var(--wrap), 100% - 48px); margin-inline: auto; }
+
+  /* Header */
+  header.top {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(255,255,255,.82);
+    backdrop-filter: saturate(180%) blur(18px);
+    -webkit-backdrop-filter: saturate(180%) blur(18px);
+    border-bottom: 1px solid rgba(0,0,0,.06);
+  }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; gap: 16px; }
+  .brand { font-weight: 600; font-size: 15px; color: var(--ink); letter-spacing: -.01em; }
+  .brand:hover { text-decoration: none; }
+  .top nav { display: flex; align-items: center; gap: 22px; font-size: 14px; }
+  .top nav a { color: var(--mute); }
+  .top nav a:hover { color: var(--ink); text-decoration: none; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 12px 22px; border-radius: 980px;
+    font: inherit; font-size: 16px; font-weight: 500;
+    border: 1px solid transparent; cursor: pointer;
+    transition: background .2s, color .2s, border-color .2s;
+  }
+  .btn:hover { text-decoration: none; }
+  .btn-primary { background: var(--blue); color: #fff; }
+  .btn-primary:hover { background: var(--blue-press); }
+  .btn-ghost { color: var(--blue); border-color: var(--line); background: transparent; }
+  .btn-ghost:hover { border-color: var(--blue); }
+  .btn-sm { padding: 7px 16px; font-size: 14px; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+
+  /* Hero */
+  .hero { padding: clamp(72px, 12vw, 148px) 0 clamp(56px, 8vw, 96px); }
+  .hero h1 {
+    margin: 0;
+    font-size: clamp(2.6rem, 7vw, 5rem);
+    line-height: 1.04;
+    font-weight: 650;
+    letter-spacing: -.035em;
+    max-width: 15ch;
+    animation: rise .8s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .hero p.lead {
+    margin: 28px 0 0;
+    max-width: 52ch;
+    font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+    line-height: 1.5;
+    color: var(--mute);
+    animation: rise .8s .08s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .hero .actions { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 12px; animation: rise .8s .16s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+  .facts {
+    margin: clamp(56px, 8vw, 96px) 0 0;
+    padding: 28px 0 0;
+    border-top: 1px solid var(--line);
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px;
+  }
+  .facts div { min-width: 0; }
+  .facts dt { font-size: clamp(1.8rem, 3.4vw, 2.6rem); font-weight: 600; letter-spacing: -.03em; line-height: 1.1; }
+  .facts dd { margin: 6px 0 0; font-size: 14px; color: var(--mute); line-height: 1.4; }
+
+  /* Sections */
+  section { padding: clamp(64px, 9vw, 112px) 0; }
+  section.tint { background: var(--mist); }
+  .section-head { max-width: 640px; margin-bottom: clamp(32px, 5vw, 56px); }
+  h2 { margin: 0; font-size: clamp(1.9rem, 4vw, 2.9rem); line-height: 1.1; font-weight: 650; letter-spacing: -.03em; }
+  .section-head p { margin: 16px 0 0; color: var(--mute); font-size: 1.1rem; }
+
+  /* Module browser */
+  .browser {
+    display: grid; grid-template-columns: 300px 1fr; gap: 0;
+    background: var(--paper); border: 1px solid var(--line); border-radius: 20px; overflow: hidden;
+  }
+  .tabs { display: flex; flex-direction: column; border-right: 1px solid var(--line); background: var(--mist); padding: 10px; gap: 2px; }
+  .tab {
+    all: unset; box-sizing: border-box; cursor: pointer;
+    display: grid; grid-template-columns: 22px 1fr; gap: 8px; align-items: baseline;
+    padding: 11px 14px; border-radius: 10px;
+    font-size: 15px; line-height: 1.35; color: var(--mute);
+    transition: background .15s, color .15s;
+  }
+  .tab:hover { color: var(--ink); }
+  .tab .n { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .tab[aria-selected="true"] { background: var(--paper); color: var(--ink); font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+  .tab:focus-visible { outline: 2px solid var(--blue); outline-offset: -2px; }
+
+  .panel { padding: clamp(24px, 4vw, 44px); min-width: 0; }
+  .panel[hidden] { display: none; }
+  .panel.in { animation: fade .25s ease both; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .panel h3 { margin: 0; font-size: 1.6rem; letter-spacing: -.02em; line-height: 1.2; }
+  .panel .blurb { margin: 10px 0 24px; color: var(--mute); max-width: 56ch; }
+  .tool { display: grid; grid-template-columns: 40px 1fr auto; gap: 4px 16px; padding: 16px 0; border-top: 1px solid var(--line); align-items: baseline; }
+  .tool .code { color: var(--mute); font-variant-numeric: tabular-nums; font-size: 15px; }
+  .tool .name { font-weight: 600; }
+  .tool .goal { grid-column: 2; color: var(--mute); font-size: 15px; }
+  .tool .time { grid-column: 3; grid-row: 1; font-size: 14px; color: var(--mute); text-align: right; white-space: nowrap; }
+  .apps { margin: 18px 0 0; padding-top: 18px; border-top: 1px solid var(--line); font-size: 15px; color: var(--mute); }
+  .apps strong { color: var(--ink); font-weight: 600; }
+
+  /* Folders */
+  .folders { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .folder { background: var(--paper); border-radius: 20px; padding: 32px; }
+  .folder h3 { margin: 0 0 4px; font-size: 1.3rem; letter-spacing: -.02em; line-height: 1.25; }
+  .folder .for { margin: 0 0 18px; font-size: 14px; color: var(--mute); }
+  .folder ul { margin: 0; padding: 0; list-style: none; }
+  .folder li { padding: 9px 0; border-top: 1px solid var(--line); font-size: 15px; }
+
+  /* Extras */
+  .extras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .extras h3 { margin: 0 0 10px; font-size: 1.25rem; letter-spacing: -.02em; }
+  .extras p { margin: 0; color: var(--mute); font-size: 16px; }
+  .extras .big { display: block; margin-bottom: 14px; font-size: 2.4rem; font-weight: 600; letter-spacing: -.03em; line-height: 1; }
+
+  /* Steps */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; counter-reset: s; list-style: none; padding: 0; margin: 0; }
+  .steps li { counter-increment: s; border-top: 2px solid var(--ink); padding-top: 18px; }
+  .steps li::before { content: counter(s); display: block; font-weight: 600; font-size: 15px; margin-bottom: 10px; color: var(--mute); }
+  .steps h3 { margin: 0 0 8px; font-size: 1.2rem; letter-spacing: -.02em; }
+  .steps p { margin: 0; color: var(--mute); font-size: 16px; }
+
+  /* FAQ */
+  .faq { max-width: 760px; }
+  .faq details { border-top: 1px solid var(--line); }
+  .faq details:last-child { border-bottom: 1px solid var(--line); }
+  .faq summary {
+    list-style: none; cursor: pointer; padding: 22px 36px 22px 0; position: relative;
+    font-size: 1.1rem; font-weight: 600; letter-spacing: -.01em;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after {
+    content: ""; position: absolute; right: 6px; top: 50%; width: 9px; height: 9px;
+    border-right: 2px solid var(--mute); border-bottom: 2px solid var(--mute);
+    transform: translateY(-70%) rotate(45deg); transition: transform .2s;
+  }
+  .faq details[open] summary::after { transform: translateY(-30%) rotate(-135deg); }
+  .faq details p { margin: 0 0 22px; color: var(--mute); max-width: 62ch; }
+
+  /* Final CTA */
+  .cta { background: var(--ink); color: #fff; text-align: left; }
+  .cta h2 { max-width: 16ch; }
+  .cta p { margin: 18px 0 32px; color: #a1a1a6; max-width: 48ch; font-size: 1.1rem; }
+  .cta .btn-primary { background: #fff; color: var(--ink); }
+  .cta .btn-primary:hover { background: #e8e8ed; }
+
+  footer { padding: 36px 0 56px; font-size: 14px; color: var(--mute); }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+  .note { max-width: 70ch; }
+
+  /* Mobile bar */
+  .mobile-bar { display: none; }
+
+  @media (max-width: 900px) {
+    .facts { grid-template-columns: repeat(2, 1fr); row-gap: 28px; }
+    .browser { grid-template-columns: 1fr; }
+    .tabs { flex-direction: row; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--line); padding: 8px; scrollbar-width: none; }
+    .tabs::-webkit-scrollbar { display: none; }
+    .tab { flex: none; grid-template-columns: auto auto; white-space: nowrap; padding: 9px 14px; }
+    .tab .t { display: none; }
+    .tab[aria-selected="true"] .t { display: inline; }
+    .folders, .extras, .steps { grid-template-columns: 1fr; }
+    .extras, .steps { gap: 32px; }
+    .top nav a:not(.btn) { display: none; }
+  }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .wrap { width: min(var(--wrap), 100% - 36px); }
+    .tool { grid-template-columns: 34px 1fr; }
+    .tool .time { grid-column: 2; grid-row: auto; text-align: left; }
+    .folder { padding: 24px; }
+    .mobile-bar {
+      display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+      padding: 10px 18px calc(10px + env(safe-area-inset-bottom, 0px));
+      background: rgba(255,255,255,.9); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid var(--line);
+    }
+    .mobile-bar .btn { width: 100%; }
+    footer { padding-bottom: 96px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Mega Pack Recursos Psicológicos</a>
+    <nav aria-label="Principal">
+      <a href="#contenido">Contenido</a>
+      <a href="#psicoeducacion">Psicoeducación</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a class="btn btn-primary btn-sm js-wa" href="#">Escribir por WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:0">
+    <div class="wrap">
+      <h1>Todo lo que llevas a sesión, ya preparado.</h1>
+      <p class="lead">Herramientas clínicas, psicoeducación, preguntas terapéuticas, instrumentos de tamizaje y ejercicios para el paciente. Material descargable para psicólogos y psicólogas.</p>
+      <div class="actions">
+        <a class="btn btn-primary js-wa" href="#">
+          Consultar precio y acceso
+        </a>
+        <a class="btn btn-ghost" href="#contenido">Ver el contenido</a>
+      </div>
+
+      <dl class="facts">
+        <div><dt>8</dt><dd>módulos de herramientas para sesión</dd></div>
+        <div><dt>46</dt><dd>herramientas individuales</dd></div>
+        <div><dt>4</dt><dd>carpetas de psicoeducación</dd></div>
+        <div><dt>120</dt><dd>preguntas terapéuticas</dd></div>
+        <div><dt>+400</dt><dd>páginas de recursos clínicos</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="contenido">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Ocho módulos, 46 herramientas.</h2>
+        <p>Cada herramienta indica su objetivo y cuánto tarda en aplicarse. Elige un módulo para ver su contenido.</p>
+      </div>
+      <div class="browser" id="browser">
+        <div class="tabs" role="tablist" aria-label="Módulos" id="tabs"></div>
+        <div id="panels"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="psicoeducacion" class="tint">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Cuatro carpetas de psicoeducación.</h2>
+        <p>Material explicativo y actividades para que el paciente comprenda su problema, identifique patrones y practique estrategias. Para adultos y adolescentes.</p>
+      </div>
+      <div class="folders" id="folders"></div>
+    </div>
+  </section>
+
+  <section id="preguntas">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Y tres recursos para completar el proceso.</h2>
+      </div>
+      <div class="extras">
+        <div>
+          <span class="big">120</span>
+          <h3>Preguntas terapéuticas</h3>
+          <p>Para abrir una conversación, profundizar en un contenido que ya apareció, explorar un tema, dejar como tarea entre sesiones o cerrar integrando lo trabajado.</p>
+        </div>
+        <div>
+          <span class="big">1</span>
+          <h3>Guía de instrumentos de tamizaje</h3>
+          <p>Para cada instrumento: objetivo, administración, corrección y puntos de corte, fuente original, población y precauciones de uso.</p>
+        </div>
+        <div>
+          <span class="big">1</span>
+          <h3>Cuadernillo para el paciente</h3>
+          <p>Ejercicios para continuar el trabajo en casa. Se eligen según los objetivos de cada proceso: no hace falta completarlo entero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tint">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Cómo se usa.</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Ubica el recurso</h3>
+          <p>La guía de navegación indica qué contiene cada módulo, carpeta y herramienta, y en qué situación sirve.</p>
+        </li>
+        <li>
+          <h3>Aplícalo en sesión</h3>
+          <p>Cada herramienta tiene un objetivo y un tiempo estimado, de 5 a 45 minutos, para que la integres a tu formulación.</p>
+        </li>
+        <li>
+          <h3>Continúa entre sesiones</h3>
+          <p>Selecciona ejercicios del cuadernillo, explica su finalidad y revisa después cómo le resultaron al paciente.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Preguntas frecuentes.</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>¿Cómo recibo el material?</summary>
+          <p>Me escribes por WhatsApp, coordinamos el pago y recibes el acceso para descargar los archivos.</p>
+        </details>
+        <details>
+          <summary>¿Para quién está pensado?</summary>
+          <p>Para psicólogos y psicólogas que atienden adultos y adolescentes en consulta particular o institucional, de forma presencial u online.</p>
+        </details>
+        <details>
+          <summary>¿Qué incluye exactamente?</summary>
+          <p>Ocho módulos con 46 herramientas para sesión, cuatro carpetas de psicoeducación, un pack de 120 preguntas terapéuticas, una guía de instrumentos de tamizaje y un cuadernillo de ejercicios para el paciente.</p>
+        </details>
+        <details>
+          <summary>¿Reemplaza el criterio clínico?</summary>
+          <p>No. Son herramientas de apoyo que deben integrarse a una formulación clínica. No todas las actividades sirven para todos los pacientes: la selección depende de la edad, el contexto y los objetivos terapéuticos.</p>
+        </details>
+        <details>
+          <summary>¿Los instrumentos de tamizaje dan un diagnóstico?</summary>
+          <p>No. Sus resultados no se interpretan de forma aislada ni equivalen a un diagnóstico clínico. La guía incluye las precauciones de uso, y cada profesional debe respetar las condiciones de aplicación y las restricciones de cada instrumento.</p>
+        </details>
+        <details>
+          <summary>¿Tengo dudas antes de comprar?</summary>
+          <p>Escríbeme por WhatsApp y te respondo.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2>Lleva tu próxima sesión ya preparada.</h2>
+      <p>Escríbeme y te cuento el precio y cómo recibir el acceso.</p>
+      <a class="btn btn-primary js-wa" href="#">Escribir por WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Mega Pack Recursos Psicológicos</span>
+    <span class="note">Material de apoyo para profesionales de la salud mental. No sustituye el criterio clínico.</span>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-primary js-wa" href="#">Escribir por WhatsApp</a>
+</div>
+
+<script>
+  /* ---- Configuración editable ---- */
+  var WHATSAPP = "56993078209"; // código de país + número, sin + ni espacios
+  var MENSAJE = "Hola, quiero información sobre el Mega Pack Recursos Psicológicos";
+
+  var waUrl = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(MENSAJE);
+  document.querySelectorAll(".js-wa").forEach(function (a) {
+    a.href = waUrl; a.target = "_blank"; a.rel = "noopener";
+  });
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ---- Contenido ---- */
+  var MODULES = [
+    { t: "Exploración emocional",
+      d: "Facilita la identificación, diferenciación y comprensión de las experiencias emocionales.",
+      a: "Exploración de la experiencia emocional; desarrollo de conciencia emocional; identificación de dificultades de reconocimiento; exploración de necesidades psicológicas.",
+      tools: [
+        ["1.1","Rueda de emociones","Ampliar el vocabulario emocional","10–20 min"],
+        ["1.2","Registro emocional con termómetro de intensidad","Observar situación, emoción, intensidad y respuesta","15 min + 3–5 min por registro"],
+        ["1.3","Emoción, pensamiento, cuerpo y conducta","Distinguir cuatro componentes de la experiencia","20–30 min"],
+        ["1.4","Pistas para reconocer emociones difíciles","Reconocer emociones a partir del cuerpo y los impulsos","20–30 min"],
+        ["1.5","Exploración de necesidades emocionales","Explorar qué necesidad puede encontrarse detrás de una emoción","25–35 min"]
+      ]},
+    { t: "Ansiedad y regulación emocional",
+      d: "Permite identificar procesos que mantienen la ansiedad y desarrollar estrategias de regulación emocional.",
+      a: "Exploración de ansiedad; identificación de disparadores y señales corporales; comprensión de ciclos de mantenimiento; regulación emocional y estrategias personales de afrontamiento.",
+      tools: [
+        ["2.1","Registro de situaciones ansiógenas y señales corporales","Identificar disparadores, predicciones y señales físicas","20 min + 5 min por registro"],
+        ["2.2","Mapa del ciclo de la ansiedad","Comprender cómo se mantiene la ansiedad","25–35 min"],
+        ["2.3","Identificación de pensamientos anticipatorios","Identificar y contrastar predicciones temidas","25–35 min"],
+        ["2.4","Plan personal de regulación emocional","Planificar qué hacer según el nivel de activación","30–40 min"],
+        ["2.5","Ejercicios de atención al presente","Anclarse en el presente ante la activación","20–30 min"],
+        ["2.6","Caja de herramientas para momentos de desregulación","Armar un repertorio personal de estrategias","25–35 min"]
+      ]},
+    { t: "Pensamientos y patrones de conducta",
+      d: "Conecta situaciones, interpretaciones, respuestas emocionales y comportamientos.",
+      a: "Identificación de patrones cognitivos; formulación de hipótesis sobre el comportamiento; análisis funcional; interpretaciones alternativas y experimentación conductual.",
+      tools: [
+        ["3.1","Registro de situación, interpretación, emoción y respuesta","Conectar situación, interpretación y respuesta","20 min + 5 min por registro"],
+        ["3.2","Identificación de pensamientos automáticos","Identificar pensamientos y patrones frecuentes","25–35 min"],
+        ["3.3","Exploración de interpretaciones alternativas","Ampliar la mirada y contrastarla con la evidencia","30–40 min"],
+        ["3.4","Análisis funcional básico de una conducta","Entender qué antecede y qué sigue a una conducta","30–40 min"],
+        ["3.5","Reconocimiento de patrones repetitivos","Notar qué se repite entre situaciones distintas","30–40 min"],
+        ["3.6","Hoja de experimentos conductuales","Poner a prueba una creencia con una acción pequeña","30–40 min + experimento"]
+      ]},
+    { t: "Autoestima e identidad",
+      d: "Trabaja autoconcepto, percepción personal, autocrítica, fortalezas y valores.",
+      a: "Exploración del autoconcepto; autoestima; identificación de autocrítica; reconocimiento de fortalezas; clarificación de valores y ampliación de la autopercepción.",
+      tools: [
+        ["4.1","Mapa de fortalezas personales","Reconocer fortalezas y recursos con ejemplos reales","30–40 min"],
+        ["4.2","Autoconcepto: lo que soy y lo que me digo de mí","Distinguir descripciones de juicios globales sobre sí","30–40 min"],
+        ["4.3","Identificación de la autocrítica","Reconocer la voz autocrítica y ensayar frases más justas","35–45 min"],
+        ["4.4","Exploración de valores","Identificar qué importa y qué acción pequeña lo acerca","35–45 min"],
+        ["4.5","Registro de logros y autodescripción desde distintas miradas","Registrar logros y recursos; ampliar la imagen de sí","30 min + 5 min por registro"]
+      ]},
+    { t: "Relaciones interpersonales",
+      d: "Explora vínculos, necesidades relacionales y habilidades de comunicación interpersonal.",
+      a: "Exploración de redes de apoyo; dificultades vinculares; comunicación asertiva; límites; resolución de conflictos y fortalecimiento de recursos interpersonales.",
+      tools: [
+        ["5.1","Mapa de relaciones significativas","Visualizar la red y la calidad de cada vínculo","25–35 min"],
+        ["5.2","Identificación de necesidades y límites personales","Reconocer señales de límites cruzados y necesidades","30–40 min"],
+        ["5.3","Comunicación asertiva y guion para expresar necesidades","Preparar cómo expresar una necesidad o un límite","35–45 min"],
+        ["5.4","Análisis de conflictos interpersonales","Entender un conflicto y elegir un próximo paso","35–45 min"],
+        ["5.5","Exploración de patrones relacionales","Notar cómo suele relacionarse en vínculos distintos","35–45 min"],
+        ["5.6","Identificación de recursos de apoyo","Dejar por escrito a quién y a qué servicios acudir","25–35 min"]
+      ]},
+    { t: "Motivación y cambio",
+      d: "Explora disposición al cambio, ambivalencias y transformación de objetivos en acciones.",
+      a: "Entrevista motivacional; ambivalencias; objetivos; seguimiento de avances; barreras y facilitadores; planificación de tareas terapéuticas.",
+      tools: [
+        ["6.1","Balance decisional","Explorar lo que se gana y se pierde al cambiar o seguir igual","30–40 min"],
+        ["6.2","Exploración de ambivalencias","Valorar importancia y confianza y escuchar ambas voces","30–40 min"],
+        ["6.3","Objetivos terapéuticos y división en pasos","Formular un objetivo propio y dividirlo en pasos","35–45 min"],
+        ["6.4","Registro de avances","Registrar lo hecho, lo que ayudó y lo que costó","20 min + 5 min por semana"],
+        ["6.5","Identificación de barreras y facilitadores","Anticipar dificultades y apoyos, y planificar respuestas","30–40 min"],
+        ["6.6","Planificación de acciones entre sesiones","Acordar acciones concretas y revisar cómo resultaron","15–25 min"]
+      ]},
+    { t: "Recursos para adolescentes",
+      d: "Reúne recursos para explorar emociones, identidad, expresión y relaciones en adolescentes.",
+      a: "Exploración de identidad; reconocimiento y expresión emocional; redes de apoyo; conflictos familiares y sociales; habilidades interpersonales.",
+      tools: [
+        ["7.1","Tarjetas recortables de identificación emocional","Nombrar emociones con una baraja de palabras","15–25 min"],
+        ["7.2","Exploración de identidad adolescente","Pensar quién soy hoy sin cerrar etiquetas","30–40 min"],
+        ["7.3","Mapa de apoyos significativos","Ver con quién contar y cómo pedir ayuda","25–35 min"],
+        ["7.4","Ejercicios de expresión emocional","Expresar una emoción con dibujo o carta no enviada","25–35 min"],
+        ["7.5","Actividades narrativas y creativas","Contar la propia historia con distancia y creatividad","35–45 min"],
+        ["7.6","Conflictos familiares y sociales: situaciones difíciles","Pensar respuestas posibles ante situaciones difíciles","35–45 min"]
+      ]},
+    { t: "Herramientas del terapeuta",
+      d: "Facilita la organización, planificación, registro y seguimiento de procesos terapéuticos.",
+      a: "Organización de sesiones; seguimiento de objetivos; hipótesis clínicas; revisión de tareas; planificación de intervenciones y continuidad del proceso.",
+      tools: [
+        ["8.1","Plantilla de planificación de sesiones","Preparar cada sesión de forma breve y ordenada","5–10 min por sesión"],
+        ["8.2","Registro de objetivos terapéuticos y seguimiento de avances","Llevar objetivos, indicadores y avances sesión a sesión","15–20 min + 3–5 min por sesión"],
+        ["8.3","Formato de revisión de tareas terapéuticas","Revisar tareas sin juicio y ajustarlas","10–15 min"],
+        ["8.4","Registro de hipótesis clínicas de trabajo","Escribir formulación e hipótesis alternativas y contrastarlas","20–30 min la primera vez"],
+        ["8.5","Plantilla de cierre de sesión","Cerrar la sesión con resumen, acuerdo, estado y riesgo","5–10 min"],
+        ["8.6","Hoja para organizar las próximas intervenciones","Planificar de forma flexible las próximas sesiones","15–25 min"]
+      ]}
+  ];
+
+  var FOLDERS = [
+    { t: "Ansiedad, pánico y evitación",
+      items: ["Psicoeducación sobre ansiedad, pánico y evitación","Mapa del ciclo de la ansiedad","Registro de disparadores","Exposición gradual","Plan de regulación y crisis"] },
+    { t: "Depresión y activación conductual",
+      items: ["Psicoeducación sobre la depresión","Mapa del ciclo depresivo","Registro de ánimo y actividades","Activación gradual","Valores","Plan de prevención de recaídas"] },
+    { t: "Autoestima, autocrítica y autocompasión",
+      items: ["Psicoeducación sobre autoestima y autocompasión","Mapa de la voz crítica","Diálogo compasivo","Plan para los días difíciles"] },
+    { t: "Relaciones, límites y comunicación",
+      items: ["Psicoeducación sobre relaciones","Mapa de vínculos","Límites con respeto","Conversaciones difíciles"] }
+  ];
+
+  /* ---- Navegador de módulos ---- */
+  var tabs = document.getElementById("tabs");
+  var panels = document.getElementById("panels");
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text) e.textContent = text;
+    return e;
+  }
+
+  MODULES.forEach(function (m, i) {
+    var b = el("button", "tab");
+    b.type = "button";
+    b.setAttribute("role", "tab");
+    b.id = "tab-" + i;
+    b.setAttribute("aria-controls", "panel-" + i);
+    b.setAttribute("aria-selected", i === 0 ? "true" : "false");
+    b.tabIndex = i === 0 ? 0 : -1;
+    b.appendChild(el("span", "n", String(i + 1)));
+    b.appendChild(el("span", "t", m.t));
+    tabs.appendChild(b);
+
+    var p = el("div", "panel");
+    p.id = "panel-" + i;
+    p.setAttribute("role", "tabpanel");
+    p.setAttribute("aria-labelledby", "tab-" + i);
+    if (i !== 0) p.hidden = true;
+    p.appendChild(el("h3", "", "Módulo " + (i + 1) + ". " + m.t));
+    p.appendChild(el("p", "blurb", m.d));
+    m.tools.forEach(function (t) {
+      var r = el("div", "tool");
+      r.appendChild(el("span", "code", t[0]));
+      r.appendChild(el("span", "name", t[1]));
+      r.appendChild(el("span", "time", t[3]));
+      r.appendChild(el("span", "goal", t[2]));
+      p.appendChild(r);
+    });
+    var ap = el("p", "apps");
+    ap.appendChild(el("strong", "", "Aplicaciones clínicas: "));
+    ap.appendChild(document.createTextNode(m.a));
+    p.appendChild(ap);
+    panels.appendChild(p);
+  });
+
+  function select(i, focus) {
+    var all = tabs.querySelectorAll(".tab");
+    all.forEach(function (t, k) {
+      var on = k === i;
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      t.tabIndex = on ? 0 : -1;
+      var pn = document.getElementById("panel-" + k);
+      pn.hidden = !on;
+      pn.classList.toggle("in", on);
+    });
+    if (focus) all[i].focus();
+    all[i].scrollIntoView({ block: "nearest", inline: "center" });
+  }
+
+  tabs.addEventListener("click", function (e) {
+    var t = e.target.closest(".tab");
+    if (!t) return;
+    select(Array.prototype.indexOf.call(tabs.children, t), false);
+  });
+  tabs.addEventListener("keydown", function (e) {
+    var cur = Array.prototype.indexOf.call(tabs.children, document.activeElement);
+    if (cur < 0) return;
+    var n = MODULES.length, next = null;
+    if (e.key === "ArrowDown" || e.key === "ArrowRight") next = (cur + 1) % n;
+    if (e.key === "ArrowUp" || e.key === "ArrowLeft") next = (cur - 1 + n) % n;
+    if (e.key === "Home") next = 0;
+    if (e.key === "End") next = n - 1;
+    if (next !== null) { e.preventDefault(); select(next, true); }
+  });
+
+  /* ---- Carpetas ---- */
+  var fw = document.getElementById("folders");
+  FOLDERS.forEach(function (f, i) {
+    var c = el("article", "folder");
+    c.appendChild(el("h3", "", "Carpeta " + (i + 1) + ". " + f.t));
+    c.appendChild(el("p", "for", "Adultos y adolescentes"));
+    var ul = el("ul");
+    f.items.forEach(function (it) { ul.appendChild(el("li", "", it)); });
+    c.appendChild(ul);
+    fw.appendChild(c);
+  });
+</script>
+</body>
+</html>
